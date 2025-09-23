@@ -8,6 +8,7 @@ class GameCamera {
 								this.near = near;
 								this.far = far;
 								this.threeCamera = new THREE.PerspectiveCamera(fov,aspect,near,far);
+								this.threeCamera.position.z = 6;
 								this._position = this.threeCamera.position;
 								this.scene = scene;
 								
