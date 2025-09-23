@@ -52,9 +52,5 @@ class Controls {
 												this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 								})
 				}
-
-
-
-
 }
 export default Controls;
