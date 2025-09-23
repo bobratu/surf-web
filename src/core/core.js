@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import GameCamera from './game_camera'
+import Unique_Array from './unique_array';
 class Core {
 
 
@@ -8,20 +9,14 @@ class Core {
 								this.renderer = new THREE.WebGLRenderer({antialias: true, canvas: canvas});
 								this.scene = new THREE.Scene();
 								this.camera = new GameCamera(90,2,0.1,5,this.scene);
-								
-								this.loopFunctions = [];
+								this.loopFunctions = Unique_Array();
 								this.animate();
-
-
 				}
 
 				animate = (time) => {
 								this.renderer.render(this.scene,this.camera.threeCamera);
 								this.resizeRenderer();
-
-								this.loopFunctions.forEach(func => {
-												func();
-								})
+								
 
 								requestAnimationFrame(this.animate);
 				}
