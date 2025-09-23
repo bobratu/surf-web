@@ -18,3 +18,5 @@ class Unique_Array {
     }
 
 }
+
+export default Unique_Array;
