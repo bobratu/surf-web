@@ -8,9 +8,9 @@ class CubeSpin extends Loop {
     constructor(core) {
         super(core);
 
-        const boxGeometry = new THREE.BoxGeometry(5,5,5,1);
+        const boxGeometry = new THREE.BoxGeometry(5, 5, 5, 1);
         const material = new THREE.MeshNormalMaterial();
-        this.cube = new THREE.Mesh(boxGeometry,material);
+        this.cube = new THREE.Mesh(boxGeometry, material);
 
         this.core.scene.add(this.cube);
 
