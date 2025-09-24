@@ -53,5 +53,9 @@ class Controls {
 		})
 	}
 
+	getKey = (keyName) => {
+		return this.keys[keyName];
+	}
+
 }
 export default Controls;

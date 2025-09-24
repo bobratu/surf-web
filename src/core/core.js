@@ -10,7 +10,7 @@ class Core {
 		this.renderer = new THREE.WebGLRenderer({ antialias: true, canvas: canvas });
 		this.scene = new THREE.Scene();
 		this.controls = new Controls();
-		this.camera = new GameCamera(90, 2, 0.1, 5, this.scene);
+		this.camera = new GameCamera(90, 2, 0.1, 500, this.scene);
 		this.loopFunctions = new Unique_Array();
 		this.animate();
 	}
